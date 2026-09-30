@@ -15,35 +15,35 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 
 add_executable(
-    QuickSort
+    run
     src/main.cpp
     src/sort.cpp
 )
 
 target_include_directories(
-    QuickSort
+    run
     PRIVATE
     src
 )
 
 add_executable(
-    tests
+    runtest
     tests/test.cpp
     src/sort.cpp
 )
 
 target_include_directories(
-    tests
+    runtest
     PRIVATE
     src
 )
 
 target_link_libraries(
-    tests
+    runtest
     PRIVATE
     GTest::gtest_main
 )
 
 include(GoogleTest)
 
-gtest_discover_tests(tests)
+gtest_discover_tests(runtest)
