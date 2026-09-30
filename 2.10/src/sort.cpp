@@ -1,8 +1,5 @@
 #include "sort.hpp"
 
-#include <cstddef>
-#include <utility>
-
 int MedianOfThree(int first, int middle, int last) {
   if (first < middle) {
     if (middle < last) {
