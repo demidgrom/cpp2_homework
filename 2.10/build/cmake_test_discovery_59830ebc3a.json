@@ -1,0 +1,42 @@
+{
+  "tests": 6,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "QuickSortTest",
+      "tests": 6,
+      "testsuite": [
+        {
+          "name": "EmptyVector",
+          "file": "\/home\/demid\/study\/cpp\/2.10\/tests\/test.cpp",
+          "line": 9
+        },
+        {
+          "name": "OneElement",
+          "file": "\/home\/demid\/study\/cpp\/2.10\/tests\/test.cpp",
+          "line": 17
+        },
+        {
+          "name": "ReverseSorted",
+          "file": "\/home\/demid\/study\/cpp\/2.10\/tests\/test.cpp",
+          "line": 25
+        },
+        {
+          "name": "AlreadySorted",
+          "file": "\/home\/demid\/study\/cpp\/2.10\/tests\/test.cpp",
+          "line": 33
+        },
+        {
+          "name": "Duplicates",
+          "file": "\/home\/demid\/study\/cpp\/2.10\/tests\/test.cpp",
+          "line": 41
+        },
+        {
+          "name": "RandomVectors",
+          "file": "\/home\/demid\/study\/cpp\/2.10\/tests\/test.cpp",
+          "line": 49
+        }
+      ]
+    }
+  ]
+}

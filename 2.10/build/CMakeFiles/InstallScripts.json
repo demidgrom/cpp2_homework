@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/demid/study/cpp/2.10/build/cmake_install.cmake",
+		"/home/demid/study/cpp/2.10/build/_deps/googletest-build/cmake_install.cmake",
+		"/home/demid/study/cpp/2.10/build/_deps/googletest-build/googlemock/cmake_install.cmake",
+		"/home/demid/study/cpp/2.10/build/_deps/googletest-build/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
