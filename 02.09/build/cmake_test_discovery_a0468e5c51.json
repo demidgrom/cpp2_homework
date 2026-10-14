@@ -1,0 +1,57 @@
+{
+  "tests": 9,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "ListTest",
+      "tests": 9,
+      "testsuite": [
+        {
+          "name": "EmptyAndEmptyPops",
+          "file": "\/home\/demid\/study\/cpp\/02.09\/tests\/test.cpp",
+          "line": 9
+        },
+        {
+          "name": "PushFrontAndPopFront",
+          "file": "\/home\/demid\/study\/cpp\/02.09\/tests\/test.cpp",
+          "line": 20
+        },
+        {
+          "name": "PushBackAndPopBack",
+          "file": "\/home\/demid\/study\/cpp\/02.09\/tests\/test.cpp",
+          "line": 41
+        },
+        {
+          "name": "GetReturnsSecondMiddleForEvenSize",
+          "file": "\/home\/demid\/study\/cpp\/02.09\/tests\/test.cpp",
+          "line": 60
+        },
+        {
+          "name": "ShowOutputsAllValues",
+          "file": "\/home\/demid\/study\/cpp\/02.09\/tests\/test.cpp",
+          "line": 72
+        },
+        {
+          "name": "ShowEmptyList",
+          "file": "\/home\/demid\/study\/cpp\/02.09\/tests\/test.cpp",
+          "line": 84
+        },
+        {
+          "name": "PerfectForwardingSupportsMoveOnlyValues",
+          "file": "\/home\/demid\/study\/cpp\/02.09\/tests\/test.cpp",
+          "line": 92
+        },
+        {
+          "name": "DestructorDestroysAllNodes",
+          "file": "\/home\/demid\/study\/cpp\/02.09\/tests\/test.cpp",
+          "line": 103
+        },
+        {
+          "name": "IntegrationMixedOperations",
+          "file": "\/home\/demid\/study\/cpp\/02.09\/tests\/test.cpp",
+          "line": 115
+        }
+      ]
+    }
+  ]
+}

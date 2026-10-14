@@ -1,0 +1,5 @@
+if(EXISTS "/home/demid/study/cpp/03.04/build/runtest[1]_tests.cmake")
+  include("/home/demid/study/cpp/03.04/build/runtest[1]_tests.cmake")
+else()
+  add_test(runtest_NOT_BUILT runtest_NOT_BUILT)
+endif()
