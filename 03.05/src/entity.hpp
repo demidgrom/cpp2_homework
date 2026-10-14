@@ -4,29 +4,29 @@
 
 class Entity_v1
 {
-public:
     virtual void test()
     {
         std::print("test 1 : \n");
         test_v1();
     }
 
+public:
     virtual void test_v1() = 0;
 };
 
 class Entity_v2
 {
-public:
     virtual void test()
     {
         std::print("test 2 : \n");
         test_v2();
     }
 
+public:
     virtual void test_v2() = 0;
 };
 
-class Adapter_v1 : Entity_v1
+class Adapter_v1 : public Entity_v1
 {
 public:
     virtual void test_v1() override
@@ -34,7 +34,7 @@ public:
     }
 };
 
-class Adapter_v2 : Entity_v2
+class Adapter_v2 : public Entity_v2
 {
 public:
     virtual void test_v2() override
@@ -42,10 +42,16 @@ public:
     }
 };
 
-class Client : Adapter_v1, Adapter_v2
+class Client : public Adapter_v1, public Adapter_v2
 {
 public:
-    virtual void test_v1() final {}
+    virtual void test_v1() final
+    {
+        std::print("test 1 in cli\n");
+    }
 
-    virtual void test_v2() final {}
+    virtual void test_v2() final
+    {
+        std::print("test 2 in cli\n");
+    }
 };
