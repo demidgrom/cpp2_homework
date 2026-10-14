@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/run.dir/link.d CMakeFiles/run.dir/src/entity.cpp.o -o run
