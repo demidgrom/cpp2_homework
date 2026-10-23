@@ -1,10 +1,11 @@
 #include "entity.hpp"
 
-int main()
-{
-    Client a;
+int main() {
+  Client client;
 
-    Entity_v1 *b = &a;
+  Entity_v1& v1 = client;
+  Entity_v2& v2 = client;
 
-    b->test_v1();
+  v1.test();
+  v2.test();
 }

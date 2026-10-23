@@ -1,5 +1,22 @@
 #include "sort.hpp"
 
+#include <utility>
+
+constexpr std::size_t kThreshold = 16;
+
+void InsertionSort(std::vector<int>& array, std::size_t left,
+                   std::size_t right) {
+  for (auto i = left + 1; i < right; ++i) {
+    for (auto j = i; j > left; --j) {
+      if (array[j - 1] <= array[j]) {
+        break;
+      }
+
+      std::swap(array[j - 1], array[j]);
+    }
+  }
+}
+
 int MedianOfThree(int first, int middle, int last) {
   if (first < middle) {
     if (middle < last) {
@@ -47,7 +64,8 @@ std::size_t Partition(std::vector<int>& array, std::size_t left,
 }
 
 void QuickSort(std::vector<int>& array, std::size_t left, std::size_t right) {
-  if (right - left <= 1) {
+  if (right - left <= kThreshold) {
+    InsertionSort(array, left, right);
     return;
   }
 
